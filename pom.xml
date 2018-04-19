@@ -61,6 +61,7 @@
                 <version>0.15.3</version>
                 <configuration>
                    <!--  <dockerHost>http://127.0.0.1:2375</dockerHost> -->
+                   
                     <verbose>true</verbose>
                     <images>
                         <image>
