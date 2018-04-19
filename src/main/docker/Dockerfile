@@ -7,7 +7,7 @@ LABEL maintainer="SKP"
 # Add a volume pointing to /tmp
 VOLUME /tmp
 
-ARG JAR_FILE=target/eureka-server-0.0.1-SNAPSHOT.jar
+ARG JAR_FILE=/target/eureka-server-0.0.1-SNAPSHOT.jar
 
 # Add the application's jar to the container
 ADD ${JAR_FILE} eureka-server.jar
