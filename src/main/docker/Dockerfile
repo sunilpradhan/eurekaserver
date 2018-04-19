@@ -18,6 +18,6 @@ EXPOSE 8090
 
 #install Spring Boot artifact
 VOLUME /tmp
-ADD //0.0.1-SNAPSHOT/eureka-server-0.0.1-SNAPSHOT.jar
+ADD /target/eureka-server-0.0.1-SNAPSHOT.jar eureka-server-0.0.1-SNAPSHOT.jar
 RUN sh -c 'touch /eureka-server-0.0.1-SNAPSHOT.jar'
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/eureka-server-0.0.1-SNAPSHOT.jar"]
