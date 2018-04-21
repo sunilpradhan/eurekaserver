@@ -7,6 +7,8 @@ LABEL maintainer="SKP"
 # Add a volume pointing to /tmp
 VOLUME /tmp
 
+ENV eureka.instance.hostname=${HOST_NAME}
+
 
 # Add the application's jar to the container
 ADD eureka-server-0.0.1-SNAPSHOT.jar eureka-server.jar
