@@ -13,7 +13,8 @@ ENV eureka.instance.hostname=${HOST_NAME}
 # Add the application's jar to the container
 ADD eureka-server-0.0.1-SNAPSHOT.jar eureka-server.jar
 
-#RUN bash -c 'touch /eureka-server.jar'
+RUN bash -c 'touch /eureka-server.jar'
+
 # Run the jar file 
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/eureka-server.jar"]
 
